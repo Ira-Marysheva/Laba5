@@ -8,46 +8,56 @@
         <link rel="stylesheet" href="Style-Bootstrap.css">
         <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity = "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     </head>
-    <body class="container-fluid light_color_bgk">
-        <!-- Щоб сарацював слайдер підключаємо JavaScript файли  -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <body>
        <!-- Хідер сайту -->
-        <div class="row lightblue_bgk">
-            <h1 class="col-lg-6 lightblue_bgk wids">
-                Подорожі доступні для всіх
-            </h1>
-            <div class="navbar navbar-expand-lg wids col-lg-6">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Головна</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Доступні тури</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Цікаві факти на поради</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контактні дані</a>
-                    </li>
-                </ul>
+        <header class="container-fluid lightblue_bgk">
+            <div class="row">
+                <h1 class="col-xs-12 col-md-6">
+                    Подорожі доступні для всіх
+                </h1>
+                <div class="col-xs-12 col-md-6">
+                    <nav class="navbar navbar-expand-lg justify-content-md-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Доступні тури</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Цікаві факти на поради</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контактні дані</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </header>
+
         <!-- прерший модуль з контентом -->
-        <div id="first_blok" class="form-inline lightblue_bgk">
-            <div id="first_text_blok">
-                Подорожі навчають більше, ніж будь-що інше
-                Іноді один день, проведений в інших місцях, 
-                дає більше, ніж десять років життя вдома
-                <br>
-                <button>Більше цікавих цитат</button>
-                <button>Поради для всіх туристів</button>
+        <section class="mt-3">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-4">
+                        <p>
+                            Подорожі навчають більше, ніж будь-що інше
+                            Іноді один день, проведений в інших місцях, 
+                            дає більше, ніж десять років життя вдома
+                        </p>
+                        <div>
+                            <button class="mt-5 btn btn-primary btn-block">Більше цікавих цитат</button>
+                            <button class="btn btn-primary btn-block">Поради для всіх туристів</button>
+                        </div>
+                    </div>
+                    <img class="col-md-4" src="pngegg.png" alt="Зображення валізи на мапі">
+                </div>
             </div>
-            <img src="pngegg.png" id="img_should" alt="Зображення валізи на мапі" >
-        </div>
+        </section>
+
         <!-- Слайдер-->
-        <div class="cize margin_center" > 
+        <section class="mt-3 container"> 
             <div class="carousel slide cize_carotsel" id="carousels" data-ride="carousel">
                 <ul class="carousel-indicators">
                     <li data-tanget="#carousels" data-slide-to="0" class="active"></li>
@@ -75,70 +85,103 @@
                     <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
-        </div>
-        <!-- Модуль з порадами новачкам-туристам-->
-        <div  class="row light_color_bgk">
-            <h3  class="form-inline" id="name_sekond_blok">
-                Поради для туристів-початківців
-            </h3>
-        </div>
-        <div class="row light_color_bgk">
-           <div id="text_second_blok" class="form-inline">
-                <img src="145.jpg" id="second_img" alt="Валіза з речами" >
-                <div  class="text_width" id="sould">
-                    Людина, яка багато подорожує, схожа на камінь,
-                    пронесений водою багато сотень верст: його
-                    шорсткості згладжуються, і все в ньому набуває
-                    м'яких, заокруглених форм
-                </div>
-           </div> 
-        </div>   
-        <div class="row margin_center" style="width: 100%; display: flex; justify-content:space-around; margin-top: 5%;">
-            <div class="row-col-4 card mb-4 rounded-3 shadow-sm text_width">
-                <img src="images.jpg" class="margin_center kard"  alt="відкрити валіза з речами">
-                <div class="paddingd">
-                    Не беріть із собою багато речей.
-                    Звісно, якщо ви їдете на курорт класу “люкс”,
-                    де на вечерю в ресторан щоразу треба приходити
-                    в іншому вбранні, величезн а валіза зі зміною одягу
-                    на всі 14 днів і ночей відпочинку може бути доречною.
-                    Як свідчать соціологічні дослідження, дві третини 
-                    мандрівників повертаються з подорожі принаймні з 
-                    Тому ретельніше обирайте гардероб у подорож.
-                </div>
-            </div>
-            <div class="row-col-4 card mb-4 rounded-3 shadow-sm text_width">
-                <img src="111.jpg" class="margin_center kard"  alt="Гроші на подорожі">
-                <div class="paddingd">Розмінювати гроші в аеропорту можна,а інколи і треба
+        </section>
 
-                     Прийнято вважати, що в аеропорту валюту міняють тільки
-                     “лохи” й мандрівники-початківці, адже курс там може бути
-                     дуже невигідним порівняно з пунктами обміну в місті.
-                     Іноді так і є. Але частіше різниця дуже незначна,
-                     а інколи її й узагалі немає. Натомість у місті ви
-                     можете довго шукати, де обміняти гроші, або приїхати
-                     в такий час, коли всі банки й пункти обміну вже зачинено.
-                     Зрештою, якщо добиратися з аеропорту громадським транспортом,
-                     вам знадобиться місцева валюта для оплати проїзду.
+        <!-- Модуль з порадами новачкам-туристам-->
+        <section class="mt-3 container">
+            <div class="light_color_bgk pb-3">
+                <h3 class="text-center">
+                    Поради для туристів-початківців
+                </h3>
+                <div class="container-fluid">
+                    <div class="row mt-3 justify-content-center">
+                        <img src="145.jpg" class="col-md-4" alt="Валіза з речами" >
+                        <p  class="col-md-4 align-self-center">
+                            Людина, яка багато подорожує, схожа на камінь,
+                            пронесений водою багато сотень верст: його
+                            шорсткості згладжуються, і все в ньому набуває
+                            м'яких, заокруглених форм
+                        </p>
+                    </div> 
                 </div>
             </div>
-            <div class="row-col-4 card mb-4 rounded-3 shadow-sm text_width">
-                <img src="kuh.jpg" class="matgin_center kard" alt="Німецькі ковбаски">
-                <div class="paddingd">Дізнайтеся про місцеві звичаї та культуру.
-                    Постарайтеся перед поїздкою знайти якомога
-                    більше інформації про країну, в яку їдете.
-                    Корисно знати, що в Німеччині у воскресіння 
-                    майже всі магазини не працюють, а в арабських 
-                    країнах в жодному разі не можна фотографувати жінок.
+            <div class="row mt-3">
+                <div class="col-md-4 mb-4">
+                    <div class="card rounded-3 shadow-sm">
+                        <img src="images.jpg" alt="відкрити валіза з речами">
+                        <p class="p-2">
+                            Не беріть із собою багато речей.
+                            Звісно, якщо ви їдете на курорт класу “люкс”,
+                            де на вечерю в ресторан щоразу треба приходити
+                            в іншому вбранні, величезн а валіза зі зміною одягу
+                            на всі 14 днів і ночей відпочинку може бути доречною.
+                            Як свідчать соціологічні дослідження, дві третини 
+                            мандрівників повертаються з подорожі принаймні з 
+                            Тому ретельніше обирайте гардероб у подорож.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card rounded-3 shadow-sm">
+                        <img src="111.jpg" alt="Гроші на подорожі">
+                        <p class="p-2">
+                            Розмінювати гроші в аеропорту можна,а інколи і треба
+                            Прийнято вважати, що в аеропорту валюту міняють тільки
+                            “лохи” й мандрівники-початківці, адже курс там може бути
+                            дуже невигідним порівняно з пунктами обміну в місті.
+                            Іноді так і є. Але частіше різниця дуже незначна,
+                            а інколи її й узагалі немає. Натомість у місті ви
+                            можете довго шукати, де обміняти гроші, або приїхати
+                            в такий час, коли всі банки й пункти обміну вже зачинено.
+                            Зрештою, якщо добиратися з аеропорту громадським транспортом,
+                            вам знадобиться місцева валюта для оплати проїзду.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card rounded-3 shadow-sm">
+                        <img src="kuh.jpg" alt="Німецькі ковбаски">
+                        <p class="p-2">
+                            Дізнайтеся про місцеві звичаї та культуру.
+                            Постарайтеся перед поїздкою знайти якомога
+                            більше інформації про країну, в яку їдете.
+                            Корисно знати, що в Німеччині у воскресіння 
+                            майже всі магазини не працюють, а в арабських 
+                            країнах в жодному разі не можна фотографувати жінок.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="mt-3 p-3 container light_color_bgk">
+            <h3 class="text-center">
+                Ціни
+            </h3>
+            <div class="prices-box">
+                <div class="font-weight-bold">Місце</div>
+                <div class="font-weight-bold">Ціна</div>
+                <div class="font-weight-bold">Дні</div>
+                <div>Маями</div>
+                <div>1000$</div>
+                <div>5</div>
+                <div>Париж</div>
+                <div>1199$</div>
+                <div>7</div>
+            </div>
+        </section>
+
         <!--Кінцевий модуль-->
-        <div id="lightblue_bgks">
-            <div class="lightblue_bgk end_text">Зацікавили?</div>
-            <button id ="first_end_button" class="lightblue_bgk end_button"><a href="#">Замовити тур</a></button>
-            <button id ="sekond_end_button" class="lightblue_bgk end_button"><a href="second.html">Додаткові відгуки</a></button>
-        </div>
+        <footer class="mt-3 lightblue_bgk">
+            <h3 class="end_text">Зацікавили?</h3>
+            <nav class="navbar justify-content-center footer-nav">
+                <a id="first_end_button" class="btn btn-primary mt-3 lightblue_bgk end_button" href="#">Замовити тур</a>
+                <a id="sekond_end_button" class="btn btn-primary mt-3 lightblue_bgk end_button" href="second.html">Додаткові відгуки</a>
+            </nav>
+        </footer>
+
+        <!-- Щоб сарацював слайдер підключаємо JavaScript файли  -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </body>
 </html>
-
